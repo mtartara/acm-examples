@@ -10,6 +10,6 @@ placement:
     vendor: "OpenShift"
 policies:
   - name: install-compliance-operator
-  manifests:
-    - path: compliance-operator.yaml
+    manifests:
+      - path: compliance-operator.yaml
 
