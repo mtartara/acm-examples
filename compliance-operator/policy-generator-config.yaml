@@ -5,9 +5,9 @@ metadata:
 policyDefaults:
   namespace: rhacm-policies
   remediationAction: enforce
-placement:
-  clusterSelectors:
-    vendor: "OpenShift"
+  placement:
+    clusterSelectors:
+      vendor: "OpenShift"
 policies:
   - name: install-compliance-operator
     manifests:
