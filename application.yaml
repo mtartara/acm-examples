@@ -6,8 +6,8 @@ metadata:
 spec:
   destination:
     namespace: rhacm-policy
-    server: local-cluster
-  project: default
+    name: local-cluster
+  project: rhacm-application
   source:
     path: compliance-operator
     repoURL: https://github.com/mtartara/policy-generator-acm.git
