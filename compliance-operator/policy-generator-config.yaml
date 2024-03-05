@@ -3,7 +3,7 @@ kind: PolicyGenerator
 metadata:
   name: install-compliance-operator
 policyDefaults:
-  namespace: policies
+  namespace: rhacm-policies
   remediationAction: enforce
 placement:
   clusterSelectors:
