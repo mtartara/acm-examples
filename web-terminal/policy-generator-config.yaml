@@ -1,0 +1,15 @@
+apiVersion: policy.open-cluster-management.io/v1
+kind: PolicyGenerator
+metadata:
+  name: install-webterminal-operator
+policyDefaults:
+  namespace: rhacm-policies
+  remediationAction: enforce
+  placement:
+    name: placement-env-test
+    clusterSelectors:
+      env: test
+policies:
+  - name: install-webterminal-operator
+    manifests:
+      - path: webterminal-operator.yaml
