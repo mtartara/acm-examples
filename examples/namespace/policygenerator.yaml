@@ -1,0 +1,14 @@
+apiVersion: policy.open-cluster-management.io/v1
+kind: PolicyGenerator
+metadata:
+  name: create-myopenshift-namespace
+policyDefaults:
+  namespace: policies
+  placement:
+    clusterSelectors:
+      name: "kidc-poc"
+  remediationAction: enforce
+policies:
+  - name: create-myopenshift-namespace
+    manifests:
+      - path: myopenshif-ns.yaml
