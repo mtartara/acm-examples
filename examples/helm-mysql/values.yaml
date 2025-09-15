@@ -1,5 +1,0 @@
-mysql:
-  resources:
-    requests:
-      memory: 128Mi
-      cpu: 100m
