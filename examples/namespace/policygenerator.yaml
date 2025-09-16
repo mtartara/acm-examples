@@ -3,10 +3,10 @@ kind: PolicyGenerator
 metadata:
   name: create-myopenshift-namespace
 policyDefaults:
-  namespace: policies
+  namespace: open-cluster-management-policies
   placement:
     clusterSelectors:
-      name: "kidc-poc"
+      name: "all-openshift-clusters"
   remediationAction: enforce
 policies:
   - name: create-myopenshift-namespace
