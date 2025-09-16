@@ -5,7 +5,7 @@ metadata:
 policyDefaults:
   namespace: open-cluster-management-policies
   placement:
-    clusterSelector:
+    clusterSelectors:
       labelSelector:
         matchExpressions:
           - key: name
