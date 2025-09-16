@@ -11,4 +11,4 @@ policyDefaults:
 policies:
   - name: create-myopenshift-namespace
     manifests:
-      - path: myopenshif-ns.yaml
+      - path: myopenshift-ns.yaml
