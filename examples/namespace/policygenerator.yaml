@@ -8,8 +8,10 @@ policyDefaults:
     clusterSelector:
       labelSelector:
         matchExpressions:
-          - key: local-cluster
-            operator: DoesNotExist
+          - key: name
+            operator: NotIn
+            values:
+            - "local-cluster"
   remediationAction: enforce
 policies:
   - name: create-myopenshift-namespace
