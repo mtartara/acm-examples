@@ -5,13 +5,12 @@ metadata:
 policyDefaults:
   namespace: open-cluster-management-policies
   placement:
-    clusterSelectors:
-      labelSelector:
-        matchExpressions:
-          - key: name
-            operator: NotIn
-            values:
-            - "local-cluster"
+    labelSelector:
+      matchExpressions:
+        - key: name
+          operator: NotIn
+          values:
+          - "local-cluster"
   remediationAction: enforce
 policies:
   - name: create-myopenshift-namespace
